@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer;
+                // answer 함수 사용 배열을 넣으면 안됨
+                // answer = Math.min(a, b, c);
+                if (a < b) {
+                    answer = a;
+                }else if (b < c) {
+                    answer = b;
+                }else {
+                    answer = c;
+                }
+
+                return answer;
+            }
+
+            console.log(solution(10, 2 , 3));
+        </script>
+    </body>
+</html>
