@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer="YES", max;
+                let total = a + b + c;
+                //max 값을 직접 구하는 방법도 확인
+                if (a>b) max = a;
+                else max = b;
+                if (c > max) max = c;
+                //Math 함수를 활용한 max
+                max = Math.max(a, b, c);
+                
+                answer = total-max > max ? "YES" : "NO"
+
+                return answer;
+            }
+
+            console.log(solution(6, 7, 11));
+        </script>
+    </body>
+</html>
