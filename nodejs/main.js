@@ -1,8 +1,17 @@
-var http = require('http');
-var fs =require('fs');
-var url = require('url');
+var candyMachine = {
+    status : {
+        name : 'node',
+        count : 5,
+    },
 
-var app = http.createServer(function(request, resposne) {
-    var _url = request.url;
-    
-})
+    getCandy : function() {
+        console.log(this)
+        this.status.count--;
+        return this.status.count;
+    }
+};
+
+var getCandy = candyMachine.getCandy;
+var count = candyMachine.status.count;
+
+console.log(this);
