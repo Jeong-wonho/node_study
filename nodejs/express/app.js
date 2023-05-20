@@ -12,8 +12,14 @@ const userRouter= require('./routes/user');
 
 const app = express();
 app.set("port", process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'pug');
+// app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'html');
+
+//nunjucks
+nunjucks.configure('views', {
+    express: app,
+    watch: true,
+})
 
 app.use(morgan('dev'));
 app.use("/", express.static(path.join(__dirname, "public")));
