@@ -6,8 +6,14 @@ const dotenv = require("dotenv");
 const path = require("path");
 
 dotenv.config();
+
+const indexRouter = require('./routes');
+const userRouter= require('./routes/user');
+
 const app = express();
 app.set("port", process.env.PORT || 3000);
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'pug');
 
 app.use(morgan('dev'));
 app.use("/", express.static(path.join(__dirname, "public")));
@@ -26,6 +32,9 @@ app.use(
     name: "session-cookie",
   })
 );
+
+app.use('/', indexRouter);
+app.use('/user', userRouter);
 
 const multer = require('multer');
 const fs = require('fs');
