@@ -3,9 +3,7 @@ const fs = require("fs");
 const path = require("path");
 const env = process.env.NODE_ENV || "development";
 const config = require("../config/config")[env];
-const User = require("./user");
-const Post = require("./post");
-const Hashtag = require("./hashtag");
+
 
 const db = {};
 const sequelize = new Sequelize(
