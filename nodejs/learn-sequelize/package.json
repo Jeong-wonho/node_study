@@ -4,7 +4,7 @@
   "description": "시퀄라이즈를 배우자",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app"
   },
   "author": "",
   "license": "MIT",
@@ -15,5 +15,8 @@
     "nunjucks": "^3.2.4",
     "sequelize": "^6.31.1",
     "sequelize-cli": "^6.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
