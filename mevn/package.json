@@ -1,0 +1,14 @@
+{
+  "name": "mevn",
+  "version": "1.0.0",
+  "description": "this is frist project",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fxjs": "^0.21.3"
+  }
+}
