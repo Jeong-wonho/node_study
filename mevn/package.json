@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fxjs": "^0.21.3"
+    "fxjs": "^0.21.3",
+    "vo": "^4.0.2"
+  },
+  "devDependencies": {
+    "electron": "^25.0.1"
   }
 }
