@@ -2,14 +2,16 @@
   "name": "mevn",
   "version": "1.0.0",
   "description": "this is frist project",
-  "main": "index.js",
+  "main": "./subject3/server.js",
   "scripts": {
     "test": "node test.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.18.2",
     "fxjs": "^0.21.3",
+    "path": "^0.12.7",
     "vo": "^4.0.2"
   },
   "devDependencies": {
