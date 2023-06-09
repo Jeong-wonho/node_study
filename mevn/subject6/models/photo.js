@@ -3,7 +3,7 @@ const Schema = mongoose.Schema
 
 const PhotoSchema = new Schema({
     albumId : Number,
-    id: Number,
+    id: {type: Number, index: true},
     title: String,
     url: String,
     thumbnailUrl: String
